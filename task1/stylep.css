@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.cointainer{
+    display: flex;
+    width:100vw;
+    height: 100vh;
+   
+}
+.left{
+    float:left;
+    width: 50vw;
+    background-image: -webkit-linear-gradient(134deg,rgb(0, 0, 0) 50%,rgb(245, 134, 43) 50%);
+ 
+}
+.right{
+    width:50vw;
+    background-image: -webkit-linear-gradient(134deg,rgb(245, 134, 43) 50%,rgb(0, 0, 0) 50%);
+ 
+}
+
+ul{
+    display: flex;
+    gap: 35px ;
+    justify-content: right;
+}
+li{
+    list-style-type: none;
+    color: white;
+    
+}
+
+p {
+    display: inline-block;
+    color: white;
+}
+.log
+    {
+        margin: 0;
+        margin-right: 70px ;
+        background-color:rgb(255, 192, 115);
+        color: white;
+        padding: 10px 40px ;
+        border-radius: 25px ;
+    }
+
+    .right p {
+        margin-top: -7px ;
+    }
+    .right ul {
+        margin-top: 35px ;
+        align-items: center;
+    }
+
+    .name{
+        font-size: 50px ;
+        font-weight: 900;
+        font-family:sans-serif;
+        display: block;
+        margin-bottom: 5px ;
+    }
+
+.addinfo
+{
+    margin-top: 2px;
+    font-size: 20px ;
+    font-weight: 400;
+    font-family:sans-serif;
+    display: block;
+
+
+}
+
+.left p {
+    margin-left: 75px ;
+}
+
+.content{
+    color: rgb(212, 212, 212);
+    font-size: 17px ;
+     margin-top: 40px ;
+     display: block;
+
+}
+
+.btn{
+    background-color:white;
+        color:  rgb(255, 181, 69);
+        padding: 10px 40px ;
+        border-radius: 25px ;
+        display:inline-block;
+        font-weight: 800;
+
+}
+
+.top{
+    display: flex;
+    gap:250px ;
+    align-items: center;
+
+}
+.phone {
+    float:right;
+   
+   margin-top: 16px ;
+    color:rgb(255, 181, 69);
+}
+
+.pizza{
+    font-size: 30px ;
+        font-weight: 900;
+        font-family:sans-serif;
+        z-index: 1;
+       
+}
+input{
+    border-radius: 25px ;
+    width: 100px ;
+    height: 30px ;
+    border: none;
+   
+}
+
+.image{
+    
+    width: 350px ;
+    height: 350px ;
+    background-size: cover;
+    /*border-radius: 50%;*/
+    border: none ;
+    position: absolute;
+    right:100px ;
+    bottom: 50px ;
+}
+
+.pizza-pic  {
+    position:absolute;
+    bottom: 0px ;
+
+}
+
+.container{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 145px ;
+  /*  background-image: -webkit-linear-gradient(101deg,rgb(0, 0, 0) 50%,rgb(245, 134, 43) 50%);*/
+  position: absolute;
+    left: 30px ;
+    bottom: 6px ;
+}
+.wrapper{
+    max-width:565px ; 
+    z-index: 2;
+}
+.wrapper .carousel{
+    font-size: 0px ;
+    cursor:pointer;
+    overflow: hidden;
+    white-space:nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img{
+    pointer-events: none;
+}
+
+.carousel img{
+    height: 100px ;
+    width: 80px ;
+    object-fit:cover;
+    width:calc(100%/3);
+    margin-left:7px ;
+}
+
+.carousel img:first-child{
+    margin-left: 0px;
+}
+.more {
+    position: absolute;
+    bottom: 140px;
+    left: 390px;
+    background-color: rgb(104, 217, 245);
+    color: #ffffff;
+    border-radius: 25px ;
+    padding: 5px  15px ;
+    cursor: pointer;
+}
+
+ 
+ 
+.right ul li  {
+    position: relative;
+    left:0 ; 
+    bottom: 0 ;
+    cursor: pointer;
+    background:transparent;
+    z-index: 2;
+    padding-left:10px;
+    padding-right:10px ;
+    text-align: center;
+}
+.design{
+    width:130px ;
+    height:130px ;
+    background-color:black;
+    border-radius:  0 0 100%  0  ;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    overflow:visible;
+}
+
+img {
+    /*mix-blend-mode:multiply;
+    filter:contrast(1);*/
+    background-color: transparent;
+    
+}
+.image
+{
+    height: 450px;
+}
+.phone{
+    color:white
+}
+.pizza{
+    color:white;
+}
+
+ li::before{
+    content: '';
+height: 0px;
+width: 100%;
+background:#d9f688 ;
+position: absolute;
+z-index: -1;
+bottom:-5px;
+left:0;
+border-bottom-left-radius:8px ;
+
+border-bottom-right-radius:8px;
+
+transition: height 0.5s;
+}
+
+ li:hover::before{
+    height:40px 
+}
+
