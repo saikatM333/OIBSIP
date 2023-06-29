@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,200;1,300&display=swap');
+
+*{
+margin:0px ;
+padding:0px ;}
+
+.sidebar{
+     background-color: rgb(221, 220, 220);
+    width:15vw;
+    font-family: 'Fira Sans' , sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+
+.sidebar nav {
+padding:45px ; 
+
+}
+
+.sidebar nav li {
+    font-size:29px ;
+    list-style-type: none;
+    padding: 32px 0 ;
+}
+
+.sidebar nav li  a{
+    font-size:30px ;
+    list-style-type: none;
+    padding: 33px 0 ;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+.main{
+    /* background-color: yellow;*/
+    width: 85vw;
+    margin:23px  ;
+    margin-left: 123px ;
+}
+
+.cointainer{
+    display: flex;
+}
+
+.infoCointainer{
+   /*background-color: rgb(208, 255, 0);&*/
+    height:58vh;
+    width:80vw;
+    margin:144px auto ;  
+    display: flex;
+    justify-content: space-around;
+}
+ .devPic img{
+   height: 58vh ;
+ }
+ .devInfo{
+    display: flex;
+      justify-content: center;
+   flex-direction: column;
+   font-family: 'Source Sans Pro', sans-serif;
+
+ }
+ .hello{ font-size: 65px ;}
+.name{font-size: 50px ;  font-weight: bold;}
+ .about{font-size: 40px ;}
+ .moreabout{
+    font-size: 29px ;
+    font-family: 'Fira Sans' , sans-serif;
+    margin: 15px  0px ;
+    
+ }
+ .buttons button{
+  
+  padding:9px 14px  ;
+  border-radius: 50px ;
+  color:white;
+  background-color: dodgerblue;
+  font-weight: bold;
+  font-size: 21px;
+  margin: 0 3px ;
+  cursor: pointer;
+ }
+
+ .buttons button:hover{
+    background-color: white;
+    color: dodgerblue;
+ }
+
+
+/*intro*/
+ h1{
+    font-family: 'Fira Sans' , sans-serif;
+    margin:23px;
+
+ }
+
+ .intro{
+    margin: 50px ;
+    margin-left: 123px;
+ }
+.intro h2{
+    font-family: 'Fira Sans' , sans-serif;
+    margin:12px ;
+    margin-top: 80px ;
+}
+.intro p{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 12px ;
+}
+
+.skillcointainer{
+    padding:12px ;
+   }
+
+.skill{
+    width:265px ;
+    height:6px ;background-color: red;
+    border: solid black 2px ;
+    
+}
+
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+   font-weight: 900;
+}
+
+.hundred{
+    width:265px ;
+    background-color: blueviolet;
+}
+.fifty{
+    width:125px ;
+  background-color: aqua;
+}
+
+.t5{
+    width:75px ;
+    background-color: yellow;
+}
+.Contactfrom{
+    margin:123px ;
+}
+
+.hamburger{
+    position:absolute;
+    cursor:pointer;
+    top:10px ;
+    left:10px ;
+
+}
+.sidebargo{
+    transform: translate(-443px , 0px );
+    position: absolute;
+}
+.cross{
+    margin-left:155px ;
+}
+@media(max-width:1315px){
+    .sidebar{
+        transform: translate(-443px , 0px );
+        position: absolute;
+    }
+    .devpic{
+        display:none ;
+    }
+ }
+
+ input {
+   
+      width: 150px ;
+ }
+
+ .ContactFrom{
+       
+  margin:100px 
+
+ }
+
+
+ .design{
+    border-radius: 100% ;
+    background-color: pink;
+    width: 370px ;
+    height: 370px ;
+    position: absolute;
+    right: 134px;
+    bottom: 70px;
+    z-index: -1;
+    transform:rotateY(-20deg) skew(15deg);
+ }
